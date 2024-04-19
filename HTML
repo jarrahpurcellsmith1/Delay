@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Audio Delay Widget</title>
+<style>
+  /* Add your CSS styling here */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>Audio Delay Experiment</h1>
+<button id="playButton">Play / Stop</button>
+<div>
+    <label for="delayTime">Delay Time (seconds):</label>
+    <input type="range" id="delayTime" min="0" max="1" step="0.01" value="0.5">
+</div>
+<div>
+    <label for="feedbackGain">Feedback Gain:</label>
+    <input type="range" id="feedbackGain" min="0" max="0.9" step="0.01" value="0.5">
+</div>
+<script src="audioScript.js"></script>
+</body>
+</html>
